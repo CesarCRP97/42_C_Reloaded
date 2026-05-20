@@ -6,11 +6,11 @@
 /*   By: crubio-p <crubio-p@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/20 10:36:16 by crubio-p          #+#    #+#             */
-/*   Updated: 2026/05/20 10:39:59 by crubio-p         ###   ########.fr       */
+/*   Updated: 2026/05/20 10:50:12 by crubio-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
 	int	counter;
 

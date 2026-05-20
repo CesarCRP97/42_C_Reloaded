@@ -6,11 +6,11 @@
 /*   By: crubio-p <crubio-p@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/20 10:40:25 by crubio-p          #+#    #+#             */
-/*   Updated: 2026/05/20 10:46:29 by crubio-p         ###   ########.fr       */
+/*   Updated: 2026/05/20 10:50:16 by crubio-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
 	while (*s1 && *s2)
 	{
