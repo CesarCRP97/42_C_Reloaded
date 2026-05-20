@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: crubio-p <crubio-p@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/19 14:31:18 by crubio-p          #+#    #+#             */
-/*   Updated: 2026/05/20 10:20:46 by crubio-p         ###   ########.fr       */
+/*   Created: 2026/05/20 10:28:28 by crubio-p          #+#    #+#             */
+/*   Updated: 2026/05/20 10:30:56 by crubio-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_sqrt(int nb)
-{
-	int	i;
+void	ft_putchar(char c);
 
-	i = 1;
-	while (i * i <= nb)
+void	ft_putstr(char *str)
+{
+	while (*str)
 	{
-		if (i * i == nb)
-			return (i);
-		i++;
+		write(1, str, 1);
+		str++;
 	}
-	return (0);
 }
+/* int	main(void)
+{
+	char	*str = "hola que tal";
+	ft_putstr(str);
+	return (0);
+} */
