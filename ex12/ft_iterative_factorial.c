@@ -6,7 +6,7 @@
 /*   By: crubio-p <crubio-p@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 14:08:53 by crubio-p          #+#    #+#             */
-/*   Updated: 2026/05/19 14:40:19 by crubio-p         ###   ########.fr       */
+/*   Updated: 2026/05/20 10:24:18 by crubio-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,4 +21,3 @@ int	ft_iterative_factorial(int nb)
 		nb--;
 	}
 }
-

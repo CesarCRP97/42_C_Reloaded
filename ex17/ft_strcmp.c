@@ -1,41 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: crubio-p <crubio-p@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/19 14:31:18 by crubio-p          #+#    #+#             */
-/*   Updated: 2026/05/20 10:23:49 by crubio-p         ###   ########.fr       */
+/*   Created: 2026/05/20 10:40:25 by crubio-p          #+#    #+#             */
+/*   Updated: 2026/05/20 10:46:29 by crubio-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_sqrt(int nb)
+int ft_strcmp(char *s1, char *s2)
 {
-	int	i;
-
-	i = 1;
-	while (i * i <= nb)
+	while (*s1 && *s2)
 	{
-		if (i * i == nb)
-			return (i);
-		i++;
+		if (*s1 != *s2)
+		{
+			return (*s1 - *s2);
+		}
+		s1++;
+		s2++;
 	}
-	return (0);
+	return (*s1 - *s2);
 }
-/* #include <stdio.h>
-#include <stdlib.h>
-int	main(int argc, char **argv)
-{
-	int	nb;
-	if (argc == 1)
-	{
-		printf("Faltan argumentos");
-	}
-	else
-	{
-		nb = atoi(argv[1]);
-		printf("Resultado del factorial = %i\n", ft_sqrt(nb));
-	}
-	return (0);
-} */

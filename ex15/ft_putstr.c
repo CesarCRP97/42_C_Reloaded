@@ -6,7 +6,7 @@
 /*   By: crubio-p <crubio-p@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/20 10:28:28 by crubio-p          #+#    #+#             */
-/*   Updated: 2026/05/20 10:30:56 by crubio-p         ###   ########.fr       */
+/*   Updated: 2026/05/20 10:35:45 by crubio-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_putstr(char *str)
 {
 	while (*str)
 	{
-		write(1, str, 1);
+		ft_putchar(*str);
 		str++;
 	}
 }

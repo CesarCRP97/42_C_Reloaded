@@ -1,41 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: crubio-p <crubio-p@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/19 14:31:18 by crubio-p          #+#    #+#             */
-/*   Updated: 2026/05/20 10:23:49 by crubio-p         ###   ########.fr       */
+/*   Created: 2026/05/20 10:36:16 by crubio-p          #+#    #+#             */
+/*   Updated: 2026/05/20 10:39:59 by crubio-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_sqrt(int nb)
+int ft_strlen(char *str)
 {
-	int	i;
+	int	counter;
 
-	i = 1;
-	while (i * i <= nb)
+	counter = 0;
+	while (*str)
 	{
-		if (i * i == nb)
-			return (i);
-		i++;
+		counter++;
+		str++;
 	}
-	return (0);
+	return (counter);
 }
-/* #include <stdio.h>
-#include <stdlib.h>
-int	main(int argc, char **argv)
-{
-	int	nb;
-	if (argc == 1)
-	{
-		printf("Faltan argumentos");
-	}
-	else
-	{
-		nb = atoi(argv[1]);
-		printf("Resultado del factorial = %i\n", ft_sqrt(nb));
-	}
-	return (0);
-} */
