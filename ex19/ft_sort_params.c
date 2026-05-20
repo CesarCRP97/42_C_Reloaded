@@ -6,7 +6,7 @@
 /*   By: crubio-p <crubio-p@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/20 11:02:01 by crubio-p          #+#    #+#             */
-/*   Updated: 2026/05/20 12:58:03 by crubio-p         ###   ########.fr       */
+/*   Updated: 2026/05/20 13:35:08 by crubio-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_print_param(char *str)
 
 void	ft_swap(char **a, char **b)
 {
-	int	aux_a;
+	char	*aux_a;
 
 	aux_a = *a;
 	*a = *b;
