@@ -6,7 +6,7 @@
 /*   By: crubio-p <crubio-p@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/20 12:26:55 by crubio-p          #+#    #+#             */
-/*   Updated: 2026/05/20 15:55:36 by crubio-p         ###   ########.fr       */
+/*   Updated: 2026/05/20 16:23:21 by crubio-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,12 @@ char	*ft_strdup(char *src)
 
 	src_len = ft_strlen(src);
 	i = 0;
-	dup_char = (char *) malloc(sizeof(char) * src_len);
+	dup_char = (char *) malloc(sizeof(char) * (src_len + 1));
 	while (i < src_len)
 	{
 		dup_char[i] = src[i];
 		i++;
 	}
+	dup_char[i] = '\0';
 	return (dup_char);
 }
