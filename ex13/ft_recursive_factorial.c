@@ -6,7 +6,7 @@
 /*   By: crubio-p <crubio-p@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 14:21:48 by crubio-p          #+#    #+#             */
-/*   Updated: 2026/05/19 14:30:44 by crubio-p         ###   ########.fr       */
+/*   Updated: 2026/05/21 14:45:57 by crubio-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ int	ft_recursive_factorial(int nb)
 	}
 	else
 	{
-		return (nb * ft_recursive_factorial(--nb));
+		return (nb * ft_recursive_factorial(nb - 1));
 	}
 }
