@@ -6,13 +6,13 @@
 /*   By: crubio-p <crubio-p@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/21 15:32:44 by crubio-p          #+#    #+#             */
-/*   Updated: 2026/05/21 15:57:00 by crubio-p         ###   ########.fr       */
+/*   Updated: 2026/05/21 16:16:17 by crubio-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_foreach(int *tab, int length, void (*f)(int ))
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < length)
