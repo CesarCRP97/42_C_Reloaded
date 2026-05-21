@@ -6,7 +6,17 @@
 /*   By: crubio-p <crubio-p@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/20 17:30:59 by crubio-p          #+#    #+#             */
-/*   Updated: 2026/05/20 17:32:32 by crubio-p         ###   ########.fr       */
+/*   Updated: 2026/05/21 11:39:39 by crubio-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef FT_POINT_H
+# define FT_POINT_H
+
+typedef struct s_point
+{
+	int	x;
+	int	y;
+}	t_point;
+
+#endif
