@@ -6,7 +6,7 @@
 /*   By: crubio-p <crubio-p@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 13:36:53 by crubio-p          #+#    #+#             */
-/*   Updated: 2026/05/20 10:49:55 by crubio-p         ###   ########.fr       */
+/*   Updated: 2026/05/21 14:39:04 by crubio-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ void	ft_is_negative(int n)
 	}
 	else
 	{
-		ft_putchar('P');
+		ft_putchar('N');
 	}
 }
