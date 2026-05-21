@@ -6,11 +6,17 @@
 /*   By: crubio-p <crubio-p@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/20 10:51:33 by crubio-p          #+#    #+#             */
-/*   Updated: 2026/05/20 11:00:54 by crubio-p         ###   ########.fr       */
+/*   Updated: 2026/05/21 15:25:55 by crubio-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 void	ft_putchar(char c);
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
 void	ft_print_param(char *str)
 {
@@ -30,9 +36,12 @@ int	main(int argc, char **argv)
 		return (0);
 	if (argc > 1)
 	{
-		ft_print_param(argv[i]);
-		ft_putchar('\n');
-		i++;
+		while(i < argc)
+		{
+			ft_print_param(argv[i]);
+			ft_putchar('\n');
+			i++;
+		}
 	}
 	return (0);
 }
