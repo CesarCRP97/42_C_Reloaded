@@ -7,9 +7,6 @@ SRC = ft_display_file.c
 
 OBJ = $(SRC:.c=.o)
 
-$(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ)
-
 all: $(NAME)
 
 #%.o: %.c
